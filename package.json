@@ -1,3 +1,5 @@
+"homepage": "https://Prashad01.github.io/speechify-demo"
+
 {
   "name": "vite-react-typescript-starter",
   "private": true,
@@ -8,6 +10,12 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+
+
   },
   "dependencies": {
     "lucide-react": "^0.344.0",
